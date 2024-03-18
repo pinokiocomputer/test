@@ -7,5 +7,8 @@ module.exports = {
   }, {
     text: "args",
     href: "args/index.json"
+  }, {
+    text: "update",
+    href: "update.json"
   }]
 }
