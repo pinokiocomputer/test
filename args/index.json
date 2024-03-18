@@ -1,0 +1,12 @@
+{
+  "run": [{
+    "method": "script.run",
+    "params": {
+      "uri": "callee.json",
+      "params": {
+        "a": "hello",
+        "b": "world"
+      }
+    }
+  }]
+}

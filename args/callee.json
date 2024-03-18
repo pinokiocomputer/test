@@ -1,0 +1,13 @@
+{
+  "run": [{
+    "method": "log",
+    "params": {
+      "json2": "{{input}}"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "{{args}}"
+    }
+  }]
+}

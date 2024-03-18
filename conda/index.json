@@ -1,0 +1,54 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": ""
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "conda": {
+        "name": "custom_env"
+      },
+      "message": ""
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "conda": {
+        "name": "custom_env"
+      },
+      "message": ""
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "conda": {
+        "name": "base"
+      },
+      "message": ""
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "conda": {
+        "path": "base"
+      },
+      "message": ""
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "conda": "base2",
+      "message": ""
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "conda": {
+        "skip": true
+      },
+      "message": ""
+    }
+  }]
+}
