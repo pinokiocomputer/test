@@ -6,6 +6,6 @@ module.exports = {
     href: "script/index.json"
   }, {
     text: "args",
-    href: "script/args.json"
+    href: "args/index.json"
   }]
 }
