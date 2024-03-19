@@ -1,0 +1,8 @@
+{
+  "run": [{
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/torch/install.js"
+    }
+  }]
+}
