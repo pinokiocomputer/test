@@ -10,5 +10,8 @@ module.exports = {
   }, {
     text: "update",
     href: "update.json"
+  }, {
+    text: "torch install",
+    href: "torch/install.json"
   }]
 }
