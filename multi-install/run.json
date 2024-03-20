@@ -26,7 +26,7 @@
     "params": {
       "uri": "{{local.mooondream.url}}",
       "params": [ "Explain what is going on here" ]
-    ]
+    }
   }, {
     "method": "log",
     "params": {
