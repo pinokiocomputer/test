@@ -23,6 +23,12 @@ module.exports = {
     text: "latest install",
     href: "script_run/latest_install.json"
   }, {
+    text: "Loop",
+    menu: [{
+      text: "loop until",
+      href: "loop/loop_until_condition.json"
+    }]
+  }, {
     text: "Multi Install",
     menu: [{
       text: "Install",
