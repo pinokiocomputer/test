@@ -8,7 +8,7 @@
   }, {
     "method": "self.set",
     "params": {
-      "i": "{{self.i+1}}"
+      "i": "{{parseInt(self.i)+1}}"
     }
   }, {
     "when": "{{self.i < 10}}",
