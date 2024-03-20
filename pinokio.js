@@ -30,6 +30,9 @@ module.exports = {
     }, {
       text: "Start",
       href: "multi-install/start.json"
+    }, {
+      text: "Run",
+      href: "multi-install/run.json"
     }]
   }, {
     text: "update",
