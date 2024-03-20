@@ -20,7 +20,10 @@
     "params": {
       "uri": "{{local.moondream.url}}",
       "path": "/answer_question_1",
-      "params": [ "Explain what is going on here" ]
+      "params": [
+        "https://media.timeout.com/images/105795964/750/422/image.jpg",
+        "Explain what is going on here"
+      ]
     }
   }, {
     "method": "log",
