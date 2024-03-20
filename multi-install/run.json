@@ -1,0 +1,24 @@
+{
+  "run": [{
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
+    }
+  }, {
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+    }
+  }, {
+    "method": "gradio.predict",
+    "params": [
+      "https://www.lego.com/cdn/cs/set/assets/bltfe2342485fca1540/21339.png",
+      "Explain what is going on here"
+    ]
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "{{iniput}}"
+    }
+  }]
+}
