@@ -3,7 +3,7 @@
     "method": "script.run",
     "params": {
       "branch": "master",
-      "uri": "https://github.com/facefusion/facefusion-pinokio/install.js",
+      "uri": "https://github.com/facefusion/facefusion-pinokio.git/install.js",
       "params": {
         "venv": "{{path.resolve(cwd, 'env')}}"
       }
