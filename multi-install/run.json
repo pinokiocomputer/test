@@ -18,7 +18,7 @@
   }, {
     "method": "gradio.predict",
     "params": {
-      "uri": "{{local.mooondream.url}}",
+      "uri": "{{local.mooondream}}",
       "params": [ "Explain what is going on here" ]
     }
   }, {
