@@ -1,0 +1,13 @@
+{
+  "run": [{
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
+    }
+  }, {
+    "method": "script.stop",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
+    }
+  }]
+}
