@@ -1,0 +1,18 @@
+{
+  "run": [{
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/moondream2/install.js"
+    }
+  }, {
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/automatic1111.git/install.js"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "\r\nInstall Complete!\r\n"
+    }
+  }]
+}

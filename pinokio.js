@@ -23,6 +23,9 @@ module.exports = {
     text: "latest install",
     href: "script_run/latest_install.json"
   }, {
+    text: "Multi Install",
+    href: "multi-install/install.json"
+  }, {
     text: "update",
     href: "update.json"
   }]
