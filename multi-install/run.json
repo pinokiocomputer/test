@@ -10,10 +10,22 @@
       "uri": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
     }
   }, {
+    "method": "import",
+    "params": {
+      "moondream": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js",
+      "auto1111": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+    }
+  }, {
+    "method": "local.set",
+    "params": {
+      "moondream": "{{input.moondream.local.url}}",
+      "auto1111": "{{input.auto1111.local.url}}"
+    }
+  }, {
     "method": "gradio.predict",
-    "params": [
-      "https://www.lego.com/cdn/cs/set/assets/bltfe2342485fca1540/21339.png",
-      "Explain what is going on here"
+    "params": {
+      "uri": "{{local.mooondream.url}}",
+      "params": [ "Explain what is going on here" ]
     ]
   }, {
     "method": "log",
