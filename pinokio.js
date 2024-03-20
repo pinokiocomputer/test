@@ -24,7 +24,13 @@ module.exports = {
     href: "script_run/latest_install.json"
   }, {
     text: "Multi Install",
-    href: "multi-install/install.json"
+    menu: [{
+      text: "Install",
+      href: "multi-install/install.json"
+    }, {
+      text: "Start",
+      href: "multi-install/start.json"
+    }]
   }, {
     text: "update",
     href: "update.json"
