@@ -8,5 +8,10 @@
         "venv": "{{path.resolve(cwd, 'env')}}"
       }
     }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "Returned!"
+    }
   }]
 }
