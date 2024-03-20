@@ -8,10 +8,13 @@ module.exports = {
     text: "args",
     href: "args/index.json"
   }, {
-    text: "update",
-    href: "update.json"
-  }, {
     text: "torch install",
     href: "torch/install.json"
+  }, {
+    text: "torch shared install",
+    href: "torch/shared_venv_install.json"
+  }, {
+    text: "update",
+    href: "update.json"
   }]
 }
