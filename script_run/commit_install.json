@@ -1,0 +1,12 @@
+{
+  "run": [{
+    "method": "script.run",
+    "params": {
+      "hash": "ced4e76aa2a7c60a08535af8c340efea153ec381",
+      "uri": "https://github.com/facefusion/facefusion-pinokio/install.js",
+      "params": {
+        "venv": "{{path.resolve(cwd, 'env')}}"
+      }
+    }
+  }]
+}
