@@ -16,19 +16,25 @@
       "auto1111": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
     }
   }, {
+    "id": "run",
     "method": "gradio.predict",
     "params": {
       "uri": "{{local.moondream.url}}",
       "path": "/answer_question_1",
       "params": [
-        { "uri": "https://media.timeout.com/images/105795964/750/422/image.jpg" },
+        { "path": "https://media.timeout.com/images/105795964/750/422/image.jpg" },
         "Explain what is going on here"
       ]
     }
   }, {
     "method": "log",
     "params": {
-      "json2": "{{iniput}}"
+      "json2": "{{input.data[0]}}"
+    }
+  }, {
+    "method": "goto",
+    "params": {
+      "id": "run"
     }
   }]
 }

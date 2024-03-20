@@ -1,0 +1,20 @@
+{
+  "i": 1,
+  "run": [{
+    "method": "log",
+    "params": {
+      "raw": "{{self.i}}"
+    }
+  }, {
+    "method": "self.set",
+    "params": {
+      "i": "{{i+1}}"
+    }
+  }, {
+    "when": "{{i < 10}}",
+    "method": "goto",
+    "params": {
+      "index": 0
+    }
+  }]
+}
