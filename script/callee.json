@@ -15,7 +15,7 @@
       "json2": "{{input}}"
     }
   }, {
-    "method": "return",
+    "method": "script.return",
     "params": {
       "ressponse": "{{args.a + ' # ' + args.b}}"
     }
