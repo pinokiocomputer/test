@@ -19,6 +19,7 @@
     "method": "gradio.predict",
     "params": {
       "uri": "{{local.moondream.url}}",
+      "path": "/answer_question_1",
       "params": [ "Explain what is going on here" ]
     }
   }, {
