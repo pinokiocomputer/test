@@ -44,7 +44,7 @@
     "method": "net",
     "params": {
       "method": "post",
-      "url": "{{let url = new URL(local.auto1111.url); url.pathname = '/sdapi/v1/txt2img'; url}}",
+      "url": "{{let url = new URL(local.auto1111.url); url.pathname = '/sdapi/v1/txt2img'; url.toString()}}",
       "data": {
         "prompt": "{{local.prompt}}"
       }
