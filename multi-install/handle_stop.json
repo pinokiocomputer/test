@@ -1,0 +1,40 @@
+{
+  "daemon": true,
+  "run": [{
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
+    }
+  }, {
+    "method": "script.run",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "Started"
+    }
+  }],
+  "on": {
+    "stop": [{
+      "method": "log",
+      "params": {
+        "raw": "\r\nStop Script\r\n"
+      }
+    }, {
+      "method": "script.stop",
+      "params": {
+        "uri": [
+          "https://github.com/cocktailpeanutlabs/moondream2.git/start.js",
+          "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+        ]
+      }
+    }, {
+      "method": "log",
+      "params": {
+        "raw": "\r\nScript stopped\r\n"
+      }
+    }]
+  }
+}
