@@ -48,6 +48,9 @@ module.exports = {
     }, {
       text: "Run",
       href: "multi-install/run.json"
+    }, {
+      text: "Handle Stop",
+      href: "multi-install/handle_stop.json"
     }]
   }, {
     text: "update",
