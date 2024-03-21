@@ -1,0 +1,58 @@
+{
+  "run": [{
+    "method": "script.start",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
+    }
+  }, {
+    "id": "run",
+    "method": "gradio.predict",
+    "params": {
+      "uri": "{{local.moondream.url}}",
+      "path": "/answer_question_1",
+      "params": [
+        { "path": "https://media.timeout.com/images/105795964/750/422/image.jpg" },
+        "Explain what is going on here"
+      ]
+    }
+  }, { 
+    "method": "local.set",
+    "params": {
+      "prompt": "{{input}}"
+    }
+  }, {
+    "method": "script.stop",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
+    }
+  }, {
+    "method": "script.start",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+    }
+  }, {
+    "method": "local.import",
+    "params": {
+      "auto1111": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+    }
+  }, {
+    "method": "net",
+    "params": {
+      "method": "post",
+      "url": "{{local.auto1111.url}}/sdapi/v1/txt2img",
+      "data": {
+        "prompt": "{{local.prompt}}"
+      }
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "{{input}}"
+    }
+  }, {
+    "method": "script.stop",
+    "params": {
+      "auto1111": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+    }
+  }]
+}
