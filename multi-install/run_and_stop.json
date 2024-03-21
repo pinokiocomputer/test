@@ -57,7 +57,7 @@
   }, {
     "method": "script.stop",
     "params": {
-      "auto1111": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
+      "uri": "https://github.com/cocktailpeanutlabs/automatic1111.git/start.js"
     }
   }]
 }
