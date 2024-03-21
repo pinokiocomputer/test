@@ -5,10 +5,15 @@
       "uri": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
     }
   }, {
+    "method": "local.import",
+    "params": {
+      "moondream2": "https://github.com/cocktailpeanutlabs/moondream2.git/start.js"
+    }
+  }, {
     "id": "run",
     "method": "gradio.predict",
     "params": {
-      "uri": "{{local.moondream.url}}",
+      "uri": "{{local.moondream2.url}}",
       "path": "/answer_question_1",
       "params": [
         { "path": "https://media.timeout.com/images/105795964/750/422/image.jpg" },
