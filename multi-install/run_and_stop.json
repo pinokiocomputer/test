@@ -23,7 +23,7 @@
   }, { 
     "method": "local.set",
     "params": {
-      "prompt": "{{input}}"
+      "prompt": "{{input.data[0]}}"
     }
   }, {
     "method": "script.stop",
