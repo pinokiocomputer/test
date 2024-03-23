@@ -1,0 +1,25 @@
+{
+  "run": [{
+    "method": "log",
+    "params": {
+      "raw": "Running? {{script.running(cwd, 'script_running.json')}}"
+    }
+  }, {
+    "when": "{{script.running(cwd, 'script_running.json')}}",
+    "method": "goto",
+    "params": {
+      "id": "end"
+    }
+  }, {
+    "method": "script.start",
+    "params": {
+      "uri": "{{script.running(cwd, 'script_running.json')}}"
+    }
+  }, {
+    "id": "end",
+    "method": "log",
+    "params": {
+      "raw": "[script_running_self.json] Started!"
+    }
+  }]
+}

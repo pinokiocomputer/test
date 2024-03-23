@@ -19,7 +19,7 @@
     "id": "end",
     "method": "log",
     "params": {
-      "raw": "Started!"
+      "raw": "[script_running] Started!"
     }
   }]
 }
