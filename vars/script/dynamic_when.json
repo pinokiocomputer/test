@@ -9,7 +9,7 @@
     "when": "{{script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}",
     "method": "goto",
     "params": {
-      "index": null
+      "id": "end"
     }
   }, {
     "when": "{{!script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}",
@@ -24,10 +24,10 @@
       "uri": "https://github.com/cocktailpeanutlabs/bark.git/install.js"
     }
   }, {
-    "when": "{{!script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}",
+    "id": "end",
     "method": "log",
     "params": {
-      "raw": "after install: {{script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}"
+      "raw": "bark exists? {{script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}"
     }
   }]
 }
