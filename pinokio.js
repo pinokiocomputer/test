@@ -56,6 +56,12 @@ module.exports = {
       href: "multi-install/run_and_stop.json"
     }]
   }, {
+    text: "Variables",
+    menu: [{
+      text: "script.exists",
+      href: "vars/script/index.json"
+    }]
+  }, {
     text: "update",
     href: "update.json"
   }]
