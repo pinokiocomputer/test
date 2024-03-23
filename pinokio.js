@@ -60,6 +60,9 @@ module.exports = {
     menu: [{
       text: "script.exists",
       href: "vars/script/index.json"
+    }, {
+      text: "when(script.exists)",
+      href: "vars/script/dynamic_when.json"
     }]
   }, {
     text: "update",
