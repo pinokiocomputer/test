@@ -1,0 +1,31 @@
+{
+  "run": [{
+    "when": "{{script.exists('https://github.com/cocktailpeanutlabs/bark.git')}}",
+    "method": "log",
+    "params": {
+      "raw": "already exists. skip."
+    }
+  }, {
+    "when": "{{script.exists('https://github.com/cocktailpeanutlabs/bark.git')}}",
+    "method": "goto",
+    "params": {
+      "id": "end"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "does not exist. installing..."
+    }
+  }, {
+    "method": "script.download",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/bark.git"
+    }
+  }, {
+    "id": "end",
+    "method": "log",
+    "params": {
+      "raw": "bark exists? {{script.exists('https://github.com/cocktailpeanutlabs/bark.git')}}"
+    }
+  }]
+}
