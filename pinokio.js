@@ -71,7 +71,7 @@ module.exports = {
       href: "vars/script/script_running_self.json"
     }, {
       text: "script.local",
-      href: "vars/script/script_running_self.json"
+      href: "vars/script/script_local.json"
     }]
   }, {
     text: "update",
