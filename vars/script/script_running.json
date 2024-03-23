@@ -1,0 +1,25 @@
+{
+  "run": [{
+    "method": "log",
+    "params": {
+      "raw": "Running? {{script.running('https://github.com/cocktailpeanutlabs/bark.git/start.js')}}"
+    }
+  }, {
+    "when": "{{script.running('https://github.com/cocktailpeanutlabs/bark.git/start.js')}}",
+    "method": "goto",
+    "params": {
+      "id": "end"
+    }
+  }, {
+    "method": "script.start",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/bark.git/start.js"
+    }
+  }, {
+    "id": "end",
+    "method": "log",
+    "params": {
+      "raw": "Started!"
+    }
+  }]
+}

@@ -63,6 +63,9 @@ module.exports = {
     }, {
       text: "when(script.exists)",
       href: "vars/script/dynamic_when.json"
+    }, {
+      text: "when(script.exists)",
+      href: "vars/script/script_running.json"
     }]
   }, {
     text: "update",
