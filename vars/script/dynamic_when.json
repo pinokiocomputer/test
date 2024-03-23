@@ -1,0 +1,30 @@
+{
+  "run": [{
+    "method": "log",
+    "params": {
+      "raw": "before install: {{script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}"
+    }
+  }, {
+    "when": "{{!script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}",
+    "method": "script.start",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/bark.git/install.js"
+    }
+  }, {
+    "when": "{{!script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}",
+    "method": "log",
+    "params": {
+      "raw": "after install: {{script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}"
+    }
+  }, {
+    "method": "script.start",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/bark.git/reset.js"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "after reset: {{script.exists('https://github.com/cocktailpeanutlabs/bark.git/env')}}"
+    }
+  }]
+}
