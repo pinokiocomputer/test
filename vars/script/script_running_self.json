@@ -19,7 +19,12 @@
     "id": "end",
     "method": "log",
     "params": {
-      "raw": "[script_running_self] {{script.running(cwd, 'script_running.json')}}"
+      "raw": "[script_running.json] running? {{script.running(cwd, 'script_running.json')}}"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "[bark] running? {{script.running('https://github.com/cocktailpeanutlabs/bark.git/start.js')}}"
     }
   }]
 }
