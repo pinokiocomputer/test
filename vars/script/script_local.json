@@ -1,0 +1,40 @@
+{
+  "run": [{
+    "method": "log",
+    "params": {
+      "json2": "Local Variable {{script.local('https://github.com/cocktailpeanutlabs/bark.git/start.js')}}"
+    }
+  }, {
+    "when": "{{script.running('https://github.com/cocktailpeanutlabs/bark.git/start.js')}}",
+    "method": "goto",
+    "params": {
+      "id": "end"
+    }
+  }, {
+    "method": "script.start",
+    "params": {
+      "uri": "https://github.com/cocktailpeanutlabs/bark.git/start.js"
+    }
+  }, {
+    "id": "end",
+    "method": "log",
+    "params": {
+      "raw": "[script_running] Started!"
+    }
+  }, {
+    "method": "local.set",
+    "params": {
+      "started": true
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "[bark] Local Variable {{script.local('https://github.com/cocktailpeanutlabs/bark.git/start.js')}}"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "[self] Local Variable {{script.local(cwd, 'script_local.json')}}"
+    }
+  }]
+}

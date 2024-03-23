@@ -69,6 +69,9 @@ module.exports = {
     }, {
       text: "script.running cwd",
       href: "vars/script/script_running_self.json"
+    }, {
+      text: "script.local",
+      href: "vars/script/script_running_self.json"
     }]
   }, {
     text: "update",
