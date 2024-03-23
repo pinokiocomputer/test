@@ -72,6 +72,9 @@ module.exports = {
     }, {
       text: "script.local",
       href: "vars/script/script_local.json"
+    }, {
+      text: "script.download",
+      href: "vars/script/script_download.json"
     }]
   }, {
     text: "update",
