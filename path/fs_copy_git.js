@@ -11,7 +11,7 @@
     "method": "fs.copy",
     "params": {
       "src": "items.json",
-      "dest": "https://github.com/pinokiocomputer/test.git/path/items2.json",
+      "dest": "https://github.com/pinokiocomputer/test.git/path/items2.json"
     }
   }]
 }

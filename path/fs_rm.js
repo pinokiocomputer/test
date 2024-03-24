@@ -2,7 +2,7 @@
   "run": [{
     "method": "fs.rm",
     "params": {
-      "path": "items.json",
+      "path": "items.json"
     }
   }]
 }
