@@ -119,6 +119,12 @@ module.exports = {
       href: "goto/goto_with_params.json"
     }]
   }, {
+    text: "fs",
+    menu: [{
+      text: "fs.write json array",
+      href: "fs/array.json"
+    }]
+  }, {
     text: "update",
     href: "update.json"
   }]

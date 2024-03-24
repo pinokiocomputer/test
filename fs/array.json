@@ -1,0 +1,8 @@
+{
+  "run": [{
+    "method": "fs.write",
+    "params": {
+      "json": [1,2,3]
+    }
+  }]
+}
