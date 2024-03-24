@@ -77,6 +77,24 @@ module.exports = {
       href: "vars/script/script_download.json"
     }]
   }, {
+    text: "fs",
+    menu: [{
+      text: "fs.copy",
+      href: "path/fs_copy.js"
+    }, {
+      text: "fs.copy_git",
+      href: "path/fs_copy_git.js"
+    }, {
+      text: "fs.rm",
+      href: "path/fs_rm.js"
+    }, {
+      text: "fs.rm_git",
+      href: "path/fs_rm_git.js"
+    }, {
+      text: "fs.write",
+      href: "path/fs_write.js"
+    }]
+  }, {
     text: "update",
     href: "update.json"
   }]
