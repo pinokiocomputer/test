@@ -1,0 +1,22 @@
+{
+  "run": [{
+    "method": "goto",
+    "params": {
+      "id": "w",
+      "params": {
+        "items": ["alice", "bob", "carol"]
+      }
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "hello"
+    }
+  }, {
+    "id": "w",
+    "method": "log",
+    "params": {
+      "json2": "{{input}}"
+    }
+  }]
+}

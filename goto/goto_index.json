@@ -1,0 +1,18 @@
+{
+  "run": [{
+    "method": "goto",
+    "params": {
+      "index": 2
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "hello"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "world"
+    }
+  }]
+}
