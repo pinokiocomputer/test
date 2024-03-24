@@ -1,4 +1,4 @@
-{
+module.exports = {
   "run": [{
     "method": "fs.write",
     "params": {
