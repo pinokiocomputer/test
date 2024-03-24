@@ -107,6 +107,18 @@ module.exports = {
       href: "path/fs_download_git.js"
     }]
   }, {
+    text: "goto",
+    menu: [{
+      text: "goto id",
+      href: "goto/goto_id.json"
+    }, {
+      text: "goto index",
+      href: "goto/goto_index.json"
+    }, {
+      text: "goto with params",
+      href: "goto/goto_with_params.json"
+    }]
+  }, {
     text: "update",
     href: "update.json"
   }]
