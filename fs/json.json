@@ -1,0 +1,11 @@
+{
+  "run": [{
+    "method": "fs.write",
+    "params": {
+      "path": "nums.json",
+      "json": {
+        "numbers": [1,2,3]
+      }
+    }
+  }]
+}

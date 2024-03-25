@@ -1,0 +1,9 @@
+{
+  "run": [{
+    "method": "fs.write",
+    "params": {
+      "path": "csv.csv",
+      "text": "alice,bob,carol"
+    }
+  }]
+}

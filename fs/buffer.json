@@ -1,0 +1,16 @@
+{
+  "run": [{
+    "method": "net",
+    "params": {
+      "method": "get",
+      "url": "https://via.placeholder.com/600/771796",
+      "responseType": "blob"
+    }
+  }, {
+    "method": "fs.write",
+    "params": {
+      "path": "nums.json",
+      "buffer": "{{input}}"
+    }
+  }]
+}

@@ -123,6 +123,15 @@ module.exports = {
     menu: [{
       text: "fs.write json array",
       href: "fs/array.json"
+    }, {
+      text: "fs.write json",
+      href: "fs/json.json"
+    }, {
+      text: "fs.write text",
+      href: "fs/text.json"
+    }, {
+      text: "fs.write buffer",
+      href: "fs/buffer.json"
     }]
   }, {
     text: "update",
