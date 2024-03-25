@@ -9,7 +9,7 @@
   }, {
     "method": "fs.write",
     "params": {
-      "path": "nums.json",
+      "path": "files/pic.png",
       "buffer": "{{input}}"
     }
   }]

@@ -2,7 +2,7 @@
   "run": [{
     "method": "fs.write",
     "params": {
-      "path": "csv.csv",
+      "path": "fs/csv.csv",
       "text": "alice,bob,carol"
     }
   }]

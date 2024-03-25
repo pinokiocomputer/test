@@ -78,6 +78,18 @@ module.exports = {
       href: "vars/script/script_download.json"
     }]
   }, {
+    text: "goto",
+    menu: [{
+      text: "goto id",
+      href: "goto/goto_id.json"
+    }, {
+      text: "goto index",
+      href: "goto/goto_index.json"
+    }, {
+      text: "goto with params",
+      href: "goto/goto_with_params.json"
+    }]
+  }, {
     text: "fs",
     menu: [{
       text: "fs.copy",
@@ -106,22 +118,7 @@ module.exports = {
     }, {
       text: "fs.download_git",
       href: "path/fs_download_git.js"
-    }]
-  }, {
-    text: "goto",
-    menu: [{
-      text: "goto id",
-      href: "goto/goto_id.json"
     }, {
-      text: "goto index",
-      href: "goto/goto_index.json"
-    }, {
-      text: "goto with params",
-      href: "goto/goto_with_params.json"
-    }]
-  }, {
-    text: "fs",
-    menu: [{
       text: "fs.write json array",
       href: "fs/array.json"
     }, {
