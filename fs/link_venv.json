@@ -1,0 +1,17 @@
+{
+  "run": [{
+    "method": "script.start",
+    "params": {
+      "message": "https://github.com/cocktailpeanutlabs/torch/install.js",
+      "params": {
+        "venv": "{{path.resolve(cwd, 'env')}}",
+        "xformers": true
+      }
+    }
+  }, {
+    "method": "fs.link",
+    "params": {
+      "venv": "env" 
+    }
+  }]
+}

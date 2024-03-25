@@ -1,6 +1,7 @@
 module.exports = {
   title: "Test",
   icon: "icon.jpg",
+  version: "1.5.0",
   menu: [{
     text: "script call",
     href: "script/index.json"
@@ -132,6 +133,9 @@ module.exports = {
     }, {
       text: "fs.write buffer",
       href: "fs/buffer.json"
+    }, {
+      text: "fs.link venv",
+      href: "fs/link_venv.json"
     }]
   }, {
     text: "update",

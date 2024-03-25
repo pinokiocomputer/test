@@ -1,0 +1,32 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui app"
+    }
+  }, {
+    "method": "fs.link",
+    "params": {
+      "drive": {
+        "checkpoints": "app/models/Stable-diffusion",
+        "vae": "app/models/VAE",
+        "loras": [
+          "app/models/Lora",
+          "app/models/LyCORIS"
+        ],
+        "upscale_models": [
+          "app/models/ESRGAN",
+          "app/models/RealESRGAN",
+          "app/models/SwinIR"
+        ],
+        "embeddings": "app/embeddings",
+        "hypernetworks": "app/models/hypernetworks",
+        "controlnet": "app/models/ControlNet"
+      },
+      "peers": [
+        "https://github.com/cocktailpeanutlabs/comfyui.git",
+        "https://github.com/cocktailpeanutlabs/fooocus.git"
+      ]
+    }
+  }]
+}
