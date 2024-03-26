@@ -4,7 +4,7 @@
     "params": {
       "method": "get",
       "url": "https://via.placeholder.com/600/771796",
-      "responseType": "blob"
+      "responseType": "arraybuffer"
     }
   }, {
     "method": "fs.write",
