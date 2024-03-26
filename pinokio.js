@@ -93,31 +93,31 @@ module.exports = {
     text: "fs",
     menu: [{
       text: "fs.copy",
-      href: "path/fs_copy.js"
+      href: "fs/fs_copy.js"
     }, {
       text: "fs.copy_git",
-      href: "path/fs_copy_git.js"
+      href: "fs/fs_copy_git.js"
     }, {
       text: "fs.rm",
-      href: "path/fs_rm.js"
+      href: "fs/fs_rm.js"
     }, {
       text: "fs.rm_git",
-      href: "path/fs_rm_git.js"
+      href: "fs/fs_rm_git.js"
     }, {
       text: "fs.write",
-      href: "path/fs_write.js"
+      href: "fs/fs_write.js"
     }, {
       text: "fs.download_dir",
-      href: "path/fs_download_dir.js"
+      href: "fs/fs_download_dir.js"
     }, {
       text: "fs.download_dir_git",
-      href: "path/fs_download_dir_git.js"
+      href: "fs/fs_download_dir_git.js"
     }, {
       text: "fs.download",
-      href: "path/fs_download.js"
+      href: "fs/fs_download.js"
     }, {
       text: "fs.download_git",
-      href: "path/fs_download_git.js"
+      href: "fs/fs_download_git.js"
     }, {
       text: "fs.write json array",
       href: "fs/array.json"
@@ -133,6 +133,9 @@ module.exports = {
     }, {
       text: "fs.link venv",
       href: "fs/link_venv.json"
+    }, {
+      text: "fs.link drive",
+      href: "fs/link_drive.json"
     }]
   }, {
     text: "update",
