@@ -2,7 +2,7 @@
   "run": [{
     "method": "script.start",
     "params": {
-      "uri": "https://github.com/cocktailpeanutlabs/torch/install.js",
+      "uri": "https://github.com/cocktailpeanutlabs/torch.git/install.js",
       "params": {
         "venv": "{{path.resolve(cwd, 'env')}}",
         "xformers": true
