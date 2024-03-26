@@ -9,8 +9,10 @@
     "method": "log",
     "params": {
       "raw": "{{'' + local.counter + ' is ' + (local.counter % 2 === 0 ? 'even' : 'odd')}}"
-    },
-    "jump": {
+    }
+  }, {
+    "method": "jump",
+    "params": {
       "id": "{{local.counter < 20 ? 'start' : 'end'}}"
     }
   }, {
