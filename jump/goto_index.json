@@ -1,6 +1,6 @@
 {
   "run": [{
-    "method": "goto",
+    "method": "jump",
     "params": {
       "index": 2
     }

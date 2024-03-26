@@ -1,11 +1,8 @@
 {
   "run": [{
-    "method": "goto",
+    "method": "jump",
     "params": {
-      "id": "w",
-      "params": {
-        "items": ["alice", "bob", "carol"]
-      }
+      "id": "w"
     }
   }, {
     "method": "log",
@@ -16,7 +13,7 @@
     "id": "w",
     "method": "log",
     "params": {
-      "json2": "{{input}}"
+      "raw": "world"
     }
   }]
 }
