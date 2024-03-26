@@ -1,0 +1,23 @@
+{
+  "run": [{
+    "id": "start",
+    "method": "local.set",
+    "params": {
+      "counter": "{{local.counter ? local.counter+1 : 1}}"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "{{'' + local.counter + ' is ' + (local.counter % 2 === 0 ? 'even' : 'odd')}}"
+    },
+    "next": {
+      "id": "{{local.counter < 20 ? 'start' : 'end'}}"
+    }
+  }, {
+    "id": "end",
+    "method": "log",
+    "params": {
+      "raw": "finished!"
+    }
+  }]
+}

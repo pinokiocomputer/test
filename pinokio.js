@@ -141,6 +141,9 @@ module.exports = {
       href: "fs/link_drive.json"
     }]
   }, {
+    text: "next",
+    href: "next/next.json"
+  }, {
     text: "update",
     href: "update.json"
   }]
