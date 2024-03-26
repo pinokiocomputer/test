@@ -78,16 +78,19 @@ module.exports = {
       href: "vars/script/script_download.json"
     }]
   }, {
-    text: "goto",
+    text: "jump",
     menu: [{
-      text: "goto id",
-      href: "goto/goto_id.json"
+      text: "jump to id",
+      href: "jump/jump_id.json"
     }, {
-      text: "goto index",
-      href: "goto/goto_index.json"
+      text: "jump to index",
+      href: "jump/jump_index.json"
     }, {
-      text: "goto with params",
-      href: "goto/goto_with_params.json"
+      text: "jump with params",
+      href: "jump/jump_with_params.json"
+    }, {
+      text: "loop",
+      href: "jump/jump_dynamic.json"
     }]
   }, {
     text: "fs",

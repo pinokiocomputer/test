@@ -1,0 +1,43 @@
+{
+  "run": [{
+    "id": "start",
+    "method": "local.set",
+    "params": {
+      "counter": "{{local.counter ? local.counter+1 : 1}}"
+    }
+  }, {
+    "method": "jump",
+    "params": {
+      "id": "{{local.counter % 2 === 0 ? 'even' : 'odd'}}"
+    }
+  }, {
+    "id": "even",
+    "method": "log",
+    "params": {
+      "raw": "{{local.counter}} is even"
+    }
+  }, {
+    "method": "jump",
+    "params": {
+      "id": "loop"
+    }
+  }, {
+    "id": "odd",
+    "method": "log",
+    "params": {
+      "raw": "{{local.counter}} is odd"
+    }
+  }, {
+    "id": "loop",
+    "method": "jump",
+    "params": {
+      "id": "{{local.counter < 20 ? 'start' : 'end'}}"
+    }
+  }, {
+    "id": "end",
+    "method": "log",
+    "params": {
+      "raw": "finished!"
+    }
+  }]
+}
