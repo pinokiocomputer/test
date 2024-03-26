@@ -91,6 +91,9 @@ module.exports = {
     }, {
       text: "loop",
       href: "jump/jump_dynamic.json"
+    }, {
+      text: "rpc jump",
+      href: "jump/rpc_jump.json"
     }]
   }, {
     text: "fs",
@@ -140,9 +143,6 @@ module.exports = {
       text: "fs.link drive",
       href: "fs/link_drive.json"
     }]
-  }, {
-    text: "next",
-    href: "next/next.json"
   }, {
     text: "update",
     href: "update.json"

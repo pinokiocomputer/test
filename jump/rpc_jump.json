@@ -10,7 +10,7 @@
     "params": {
       "raw": "{{'' + local.counter + ' is ' + (local.counter % 2 === 0 ? 'even' : 'odd')}}"
     },
-    "next": {
+    "jump": {
       "id": "{{local.counter < 20 ? 'start' : 'end'}}"
     }
   }, {
