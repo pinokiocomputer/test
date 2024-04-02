@@ -144,6 +144,21 @@ module.exports = {
       href: "fs/link_drive.json"
     }]
   }, {
+    text: "notify",
+    menu: [{
+      text: "href",
+      href: "notify/href.json"
+    }, {
+      text: "href with target",
+      href: "notify/href_target.json"
+    }, {
+      text: "html",
+      href: "notify/html.json"
+    }, {
+      text: "index",
+      href: "notify/index.json"
+    }]
+  }, {
     text: "update",
     href: "update.json"
   }]

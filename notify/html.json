@@ -1,0 +1,8 @@
+{
+  "run": [{
+    "method": "notify",
+    "params": {
+      "html": "<div><img src='https://www.reactiongifs.com/r/2012/06/homer_lurking.gif'/><p>This is an example</p></div>"
+    }
+  }]
+}

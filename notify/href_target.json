@@ -1,0 +1,10 @@
+{
+  "run": [{
+    "method": "notify",
+    "params": {
+      "html": "Click to open https://github.com",
+      "href": "https://github.com",
+      "target": "_blank"
+    }
+  }]
+}

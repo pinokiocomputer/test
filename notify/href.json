@@ -1,0 +1,9 @@
+{
+  "run": [{
+    "method": "notify",
+    "params": {
+      "html": "Click to visit index.json",
+      "href": "./index.json"
+    }
+  }]
+}
