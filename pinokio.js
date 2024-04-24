@@ -144,6 +144,12 @@ module.exports = {
       href: "fs/link_drive.json"
     }]
   }, {
+    text: "sysinfo",
+    menu: [{
+      text: "gpu",
+      href: "sysinfo/gpu.js"
+    }]
+  }, {
     text: "notify",
     menu: [{
       text: "href",
