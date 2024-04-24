@@ -2,7 +2,7 @@ module.exports = {
   run: [{
     "method": "log",
     "params": {
-      "raw": "> gpu:\r\n
+      "raw": "> gpu:\r\n"
     }
   }, {
     "method": "log",
