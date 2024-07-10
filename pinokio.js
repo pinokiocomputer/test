@@ -38,7 +38,10 @@ module.exports = {
       text: "template",
       href: "env/get.json"
     }, {
-      text: "set env",
+      text: "env.set",
+      href: "env/set.json"
+    }, {
+      text: "env.switch",
       href: "env/set.json"
     }]
   }, {

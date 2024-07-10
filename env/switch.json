@@ -1,0 +1,48 @@
+{
+  "run": [{
+    "method": "log",
+    "params": {
+      "json2": "{{env}}"
+    }
+  }, {
+    "method": "env.switch",
+    "params": {
+      "FRUIT": ["apple", "strawberry", "mango"]
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "{{env}}"
+    }
+  }, {
+    "method": "env.switch",
+    "params": {
+      "FRUIT": ["apple", "strawberry", "mango"]
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "{{env}}"
+    }
+  }, {
+    "method": "env.switch",
+    "params": {
+      "FRUIT": ["apple", "strawberry", "mango"]
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "{{env}}"
+    }
+  }, {
+    "method": "env.switch",
+    "params": {
+      "FRUIT": ["apple", "strawberry", "mango"]
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "json2": "{{env}}"
+    }
+  }]
+}
