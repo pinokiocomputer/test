@@ -37,6 +37,9 @@ module.exports = {
     menu: [{
       text: "template",
       href: "env/get.json"
+    }, {
+      text: "set env",
+      href: "env/set.json"
     }]
   }, {
     text: "Loop",
