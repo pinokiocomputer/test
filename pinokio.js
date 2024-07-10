@@ -42,7 +42,7 @@ module.exports = {
       href: "env/set.json"
     }, {
       text: "env.switch",
-      href: "env/set.json"
+      href: "env/switch.json"
     }]
   }, {
     text: "Loop",
