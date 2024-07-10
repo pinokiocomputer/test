@@ -33,6 +33,12 @@ module.exports = {
       href: "script_stop/stop.json"
     }]
   }, {
+    text: "Env",
+    menu: [{
+      text: "template",
+      href: "env/get.json"
+    }]
+  }, {
     text: "Loop",
     menu: [{
       text: "loop until",
