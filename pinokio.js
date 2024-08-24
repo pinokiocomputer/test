@@ -110,6 +110,9 @@ module.exports = {
   }, {
     text: "fs",
     menu: [{
+      text: "fs.open",
+      href: "fs/fs_open.js"
+    }, {
       text: "fs.copy",
       href: "fs/fs_copy.js"
     }, {
