@@ -4,7 +4,7 @@ module.exports = {
   version: "1.7",
   menu: [{
     text: "open file explorer",
-    href: ".",
+    href: "loop",
     fs: true
   }, {
     text: "script call",
