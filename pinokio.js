@@ -3,6 +3,10 @@ module.exports = {
   icon: "icon.jpg",
   version: "1.7",
   menu: [{
+    text: "open file explorer",
+    href: ".",
+    fs: true
+  }, {
     text: "script call",
     href: "script/index.json"
   }, {
