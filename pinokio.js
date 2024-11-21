@@ -7,6 +7,9 @@ module.exports = {
     href: "loop",
     fs: true
   }, {
+    text: "proxy",
+    href: "proxy/index.json"
+  }, {
     text: "script call",
     href: "script/index.json"
   }, {
