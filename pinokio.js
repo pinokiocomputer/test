@@ -1,7 +1,7 @@
 module.exports = {
   title: "Test",
   icon: "icon.jpg",
-  version: "1.7",
+  version: "2.2.0",
   menu: [{
     text: "open file explorer",
     href: "loop",
@@ -9,6 +9,15 @@ module.exports = {
   }, {
     text: "proxy",
     href: "proxy/index.json"
+  }, {
+    text: "playwright",
+    menu: [{
+      text: "js",
+      href: "playwright/js/run.js",
+      params: {
+        url: "https://nytimes.com"
+      }
+    }]
   }, {
     text: "script call",
     href: "script/index.json"
