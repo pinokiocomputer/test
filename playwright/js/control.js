@@ -16,10 +16,16 @@ class Control {
 //        await page.waitForLoadState('load');
       } else if (cmd.type) {
         ondata({ raw: `type: ${cmd.type}\r\n` })
-        await page.type(cmd.type)
+        await page.keyboard.type(cmd.type)
+      } else if (cmd.down) {
+        ondata({ raw: `down: ${cmd.down}\r\n` })
+        await page.keyboard.down(cmd.down)
+      } else if (cmd.up) {
+        ondata({ raw: `up: ${cmd.up}\r\n` })
+        await page.keyboard.up(cmd.up)
       } else if (cmd.press) {
         ondata({ raw: `press: ${cmd.press}\r\n` })
-        await page.press(cmd.press)
+        await page.keyboard.press(cmd.press)
       } else if (cmd.wait) {
         ondata({ raw: `wait: ${cmd.wait.selector}\r\n` })
         if (cmd.wait.selector) {
@@ -29,6 +35,12 @@ class Control {
       } else if (cmd.click) {
         ondata({ raw: `click: ${cmd.click}\r\n` })
         await page.click(cmd.click)
+      } else if (cmd.focus) {
+        ondata({ raw: `focus: ${cmd.focus}\r\n` })
+        await page.focus(cmd.focus)
+      } else if (cmd.close) {
+        ondata({ raw: `close browser\r\n` })
+        await browser.close()
       }
     }
   }
