@@ -23,7 +23,7 @@ class Control {
       } else if (cmd.wait) {
         ondata({ raw: `wait: ${cmd.wait.selector}\r\n` })
         if (cmd.wait.selector) {
-          await page.wait_for_selector(cmd.wait.selector)
+          await page.waitForSelector(cmd.wait.selector)
         } else {
         }
       } else if (cmd.click) {
