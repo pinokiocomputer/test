@@ -1,6 +1,6 @@
 class Control {
   async run(req, ondata, kernel) {
-    console.log({ req })
+    console.log({ req, kernel })
     let { chromium, firefox, webkit, devices } = kernel.playwright
     const browser = await chromium.launch({ headless: false, });
     console.log("browser", browser)
