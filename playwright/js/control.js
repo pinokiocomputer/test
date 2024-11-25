@@ -30,8 +30,10 @@ class Control {
         ondata({ raw: `click: ${cmd.click}\r\n` })
         await page.click(cmd.click)
       } else if (cmd.focus) {
+        ondata({ raw: `focus: ${cmd.focus}\r\n` })
         await page.focus(cmd.focus)
       } else if (cmd.close) {
+        ondata({ raw: `close browser\r\n` })
         await browser.close()
       }
     }
