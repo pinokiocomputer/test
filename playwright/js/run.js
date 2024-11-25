@@ -5,7 +5,8 @@ module.exports = {
     params: {
       cmds: [
         { url: "https://google.com" },
-        { wait: { selector: "[aria-label='Google Search']" } },
+        { wait: { selector: "textarea" } },
+        { focus: "textarea" },
         { type: "pinokio.computer" },
         { press: "Enter" },
         { wait: { selector: "#search" } },
