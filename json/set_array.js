@@ -45,5 +45,17 @@ module.exports = {
     params: {
       path: "arr.json"
     }
+  }, {
+    method: "json.set",
+    params: {
+      "arr.json": {
+        "2.zzz": "abc"
+      }
+    }
+  }, {
+    method: "fs.cat",
+    params: {
+      path: "arr.json"
+    }
   }]
 }
