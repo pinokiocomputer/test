@@ -24,7 +24,8 @@ module.exports = {
     params: {
       "arr.json": {
         "2": {
-          "xyz": "abc"
+          "xyz": "abc",
+          "xxx": "def"
         }
       }
     }
@@ -37,6 +38,16 @@ module.exports = {
     method: "json.rm",
     params: {
       "arr.json": ["2.xyz"]
+    }
+  }, {
+    method: "fs.cat",
+    params: {
+      path: "arr.json"
+    }
+  }, {
+    method: "json.rm",
+    params: {
+      "arr.json": [2]
     }
   }, {
     method: "fs.cat",
