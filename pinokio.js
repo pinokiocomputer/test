@@ -27,6 +27,9 @@ module.exports = {
       text: "json.set",
       href: "json/set.js"
     }, {
+      text: "json.set_array",
+      href: "json/set_array.js"
+    }, {
       text: "json.rm",
       href: "json/rm.js"
     }]
