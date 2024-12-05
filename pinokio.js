@@ -32,6 +32,9 @@ module.exports = {
     }, {
       text: "json.rm",
       href: "json/rm.js"
+    }, {
+      text: "json.rm_array",
+      href: "json/rm_array.js"
     }]
   }, {
     text: "script call",
