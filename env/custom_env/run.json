@@ -4,15 +4,5 @@
     "params": {
       "raw": "{{env.CUSTOM_ENV}}"
     }
-  }, {
-    "method": "json.get",
-    "params": {
-      "a": "{{env.CUSTOM_JSON_FILE}}"
-    }
-  }, {
-    "method": "log",
-    "params": {
-      "json2": "{{local.a}}"
-    }
   }]
 }
