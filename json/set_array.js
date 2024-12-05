@@ -21,5 +21,29 @@ module.exports = {
     params: {
       path: "arr.json"
     }
+  }, {
+    method: "json.set",
+    params: {
+      "arr.json": {
+        "2": { xxx: "yyy" }
+      }
+    }
+  }, {
+    method: "fs.cat",
+    params: {
+      path: "arr.json"
+    }
+  }, {
+    method: "json.set",
+    params: {
+      "arr.json": {
+        "2": { yyy: "zzz" }
+      }
+    }
+  }, {
+    method: "fs.cat",
+    params: {
+      path: "arr.json"
+    }
   }]
 }
