@@ -1,1 +1,2 @@
 CUSTOM_ENV=abc
+CUSTOM_JSON_FILE=run.json
