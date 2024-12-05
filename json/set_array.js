@@ -16,5 +16,10 @@ module.exports = {
         "1": 0
       }
     }
+  }, {
+    method: "fs.cat",
+    params: {
+      path: "arr.json"
+    }
   }]
 }
