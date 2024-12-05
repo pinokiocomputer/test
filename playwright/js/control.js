@@ -13,7 +13,6 @@ class Control {
       if (cmd.url) {
         ondata({ raw: `goto: ${cmd.url}\r\n` })
         await page.goto(cmd.url)
-//        await page.waitForLoadState('load');
       } else if (cmd.type) {
         ondata({ raw: `type: ${cmd.type}\r\n` })
         await page.keyboard.type(cmd.type)
@@ -30,7 +29,8 @@ class Control {
         ondata({ raw: `wait: ${cmd.wait.selector}\r\n` })
         if (cmd.wait.selector) {
           await page.waitForSelector(cmd.wait.selector)
-        } else {
+        } else if (cmd.wait.load) {
+          await page.waitForLoadState('load');
         }
       } else if (cmd.click) {
         ondata({ raw: `click: ${cmd.click}\r\n` })

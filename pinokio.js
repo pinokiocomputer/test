@@ -19,6 +19,18 @@ module.exports = {
       }
     }]
   }, {
+    text: "json",
+    menu: [{
+      text: "json.get",
+      href: "json/get.js"
+    }, {
+      text: "json.set",
+      href: "json/set.js"
+    }, {
+      text: "json.rm",
+      href: "json/rm.js"
+    }]
+  }, {
     text: "script call",
     href: "script/index.json"
   }, {

@@ -10,7 +10,8 @@ module.exports = {
         { type: "pinokio.computer" },
         { press: "Enter" },
         { wait: { selector: "#search" } },
-        { click: "#search a" }
+        { click: "#search a" },
+//        { close: true }
       ]
     }
   }]
