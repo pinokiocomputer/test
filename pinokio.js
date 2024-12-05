@@ -2,6 +2,15 @@ module.exports = {
   title: "Test",
   icon: "icon.jpg",
   version: "2.2.0",
+  pre: [{
+    title: "custom env",
+    description: "set custom env 1",
+    env: "CUSTOM_ENV"
+  }, {
+    title: "custom env 2",
+    description: "set custom env 2",
+    env: "CUSTOM_ENV2"
+  }],
   menu: [{
     text: "open file explorer",
     href: "loop",
