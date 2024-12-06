@@ -16,6 +16,9 @@ module.exports = {
     href: "loop",
     fs: true
   }, {
+    text: "huggingface download",
+    href: "hf/download.js"
+  }, {
     text: "proxy",
     href: "proxy/index.json"
   }, {
