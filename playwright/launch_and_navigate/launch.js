@@ -32,7 +32,7 @@ class Launch {
       });
 
       observer.observe(img, { attributes: true, attributeFilter: ['src'] });
-    }, "img");
+    }, ".image-frame img");
 
 //    let cmds = req.params.cmds
 //    for(let cmd of cmds) {
