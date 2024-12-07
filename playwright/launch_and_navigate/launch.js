@@ -12,7 +12,7 @@ class Launch {
     await page.focus("textarea")
     await page.keyboard.type("a fuzzy gentleman cat sipping coffee")
     await page.click("button.primary")
-    await page.waitForSelector("img")
+    await page.waitForSelector(".image-frame img")
     await page.exposeFunction('handleSrcChange', (src) => {
       console.log("src", src)
       page.click("button.primary")
