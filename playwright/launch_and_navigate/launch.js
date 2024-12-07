@@ -30,7 +30,7 @@ class Launch {
         window.handleSrcChange();
       });
 
-      observer.observe(img, { attributes: true, attributeFilter: ['src'] });
+      observer.observe(img, { attributes: true, attributeFilter: ['class'] });
     }, ".wrap.default");
 
 //    let cmds = req.params.cmds
