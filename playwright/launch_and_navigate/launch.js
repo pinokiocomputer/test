@@ -12,26 +12,27 @@ class Launch {
     await page.focus("textarea")
     await page.keyboard.type("a fuzzy gentleman cat sipping coffee")
     await page.click("button.primary")
-
-    await page.exposeFunction('handleSrcChange', () => {
+    await page.waitForSelector("img")
+    await page.exposeFunction('handleSrcChange', (src) => {
+      console.log("src", src)
       page.click("button.primary")
     });
     await page.evaluate((selector) => {
-      const div = document.querySelector(selector);
-      console.log("div", div)
-      if (!div) {
+      const img = document.querySelector(selector);
+      console.log("img", img)
+      if (!img) {
         console.error(`Element not found: ${selector}`);
         return;
       }
 
       // Observe changes using MutationObserver
-      const observer = new MutationObserver(() => {
+      const observer = new MutationObserver((src) => {
         console.log("Mutated")
-        window.handleSrcChange();
+        window.handleSrcChange(src);
       });
 
-      observer.observe(img, { attributes: true, attributeFilter: ['class'] });
-    }, ".wrap.default");
+      observer.observe(img, { attributes: true, attributeFilter: ['src'] });
+    }, "img");
 
 //    let cmds = req.params.cmds
 //    for(let cmd of cmds) {
