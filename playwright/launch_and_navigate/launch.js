@@ -1,7 +1,8 @@
 class Launch {
   async open(req, ondata, kernel) {
+    console.log("Playwright", kernel.playwright)
     let { firefox, devices } = kernel.playwright
-    const browser = await chromium.launch({ headless: false, });
+    const browser = await firefox.launch({ headless: false, });
     const context = await browser.newContext({ viewport: null })
     ondata({ raw: "creating new page\r\n" })
     const page = await context.newPage()
