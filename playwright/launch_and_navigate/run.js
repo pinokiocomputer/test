@@ -1,4 +1,5 @@
 module.exports = {
+  daemon: true,
   run: [
     // Delete this step if your project does not use torch
     {

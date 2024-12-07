@@ -9,6 +9,7 @@ class Launch {
     ondata({ raw: `goto: ${req.params.url}\r\n` })
     await page.goto(req.params.url)
     await page.waitForSelector("textarea")
+    await page.focus("textarea")
     await page.keyboard.type("a fuzzy gentleman cat sipping coffee")
     await page.click("button.primary")
 //    let cmds = req.params.cmds
