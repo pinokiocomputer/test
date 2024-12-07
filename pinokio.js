@@ -24,10 +24,10 @@ module.exports = {
   }, {
     text: "pre",
     menu: [{
-      text: "pre/environment.js"
+      text: "pre/environment.js",
       href: "pre/environment.js"
     }, {
-      text: "pre/environment_default.js"
+      text: "pre/environment_default.js",
       href: "pre/environment_default.js"
     }]
   }, {
