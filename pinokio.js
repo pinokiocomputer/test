@@ -26,7 +26,7 @@ module.exports = {
     menu: [{
       text: "pre/environment.js"
       href: "pre/environment.js"
-      }
+    }, {
       text: "pre/environment_default.js"
       href: "pre/environment_default.js"
     }]
