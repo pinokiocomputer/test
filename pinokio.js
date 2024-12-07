@@ -38,6 +38,9 @@ module.exports = {
       params: {
         url: "https://nytimes.com"
       }
+    }, {
+      text: "launch and visit",
+      href: "playwright/launch_and_navigate/run.js",
     }]
   }, {
     text: "json",
