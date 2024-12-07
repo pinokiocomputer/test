@@ -7,7 +7,7 @@ class Launch {
     ondata({ raw: "creating new page\r\n" })
     const page = await context.newPage()
     ondata({ raw: `goto: ${req.params.url}\r\n` })
-    await page.goto(cmd.url)
+    await page.goto(req.params.url)
 //    let cmds = req.params.cmds
 //    for(let cmd of cmds) {
 //      if (cmd.url) {
