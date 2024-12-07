@@ -12,6 +12,26 @@ class Launch {
     await page.focus("textarea")
     await page.keyboard.type("a fuzzy gentleman cat sipping coffee")
     await page.click("button.primary")
+
+    await page.exposeFunction('handleSrcChange', (newSrc) => {
+      console.log('Image src changed to:', newSrc);
+      page.click("button.primary")
+    });
+    await page.evaluate((selector) => {
+      const img = document.querySelector(selector);
+      if (!img) {
+        console.error(`Element not found: ${selector}`);
+        return;
+      }
+
+      // Observe changes using MutationObserver
+      const observer = new MutationObserver(() => {
+        window.handleSrcChange(img.src);
+      });
+
+      observer.observe(img, { attributes: true, attributeFilter: ['src'] });
+    }, "img");
+
 //    let cmds = req.params.cmds
 //    for(let cmd of cmds) {
 //      if (cmd.url) {
