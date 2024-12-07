@@ -13,14 +13,13 @@ class Launch {
     await page.keyboard.type("a fuzzy gentleman cat sipping coffee")
     await page.click("button.primary")
 
-    await page.exposeFunction('handleSrcChange', (newSrc) => {
-      console.log('Image src changed to:', newSrc);
+    await page.exposeFunction('handleSrcChange', () => {
       page.click("button.primary")
     });
     await page.evaluate((selector) => {
-      const img = document.querySelector(selector);
-      console.log("IMG", img)
-      if (!img) {
+      const div = document.querySelector(selector);
+      console.log("div", div)
+      if (!div) {
         console.error(`Element not found: ${selector}`);
         return;
       }
@@ -28,11 +27,11 @@ class Launch {
       // Observe changes using MutationObserver
       const observer = new MutationObserver(() => {
         console.log("Mutated")
-        window.handleSrcChange(img.src);
+        window.handleSrcChange();
       });
 
       observer.observe(img, { attributes: true, attributeFilter: ['src'] });
-    }, "img");
+    }, ".wrap.default");
 
 //    let cmds = req.params.cmds
 //    for(let cmd of cmds) {
