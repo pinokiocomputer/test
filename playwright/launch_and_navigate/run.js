@@ -25,13 +25,6 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: "env",
-        message: "python app.py"
-      }
-    },
-    {
-      method: "shell.run",
-      params: {
-        venv: "env",
         message: [ "python app.py", ],
         on: [{
           "event": "/http:\/\/\\S+/",   
