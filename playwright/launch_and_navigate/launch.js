@@ -19,6 +19,7 @@ class Launch {
     });
     await page.evaluate((selector) => {
       const img = document.querySelector(selector);
+      console.log("IMG", img)
       if (!img) {
         console.error(`Element not found: ${selector}`);
         return;
@@ -26,6 +27,7 @@ class Launch {
 
       // Observe changes using MutationObserver
       const observer = new MutationObserver(() => {
+        console.log("Mutated")
         window.handleSrcChange(img.src);
       });
 
