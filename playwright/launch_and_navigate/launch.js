@@ -44,4 +44,4 @@ class Launch {
 //    }
   }
 }
-module.exports = Control
+module.exports = Launch
