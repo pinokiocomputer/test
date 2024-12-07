@@ -1,36 +1,35 @@
 class Launch {
   async open(req, ondata, kernel) {
-    console.log("Playwright", kernel.playwright)
-    let { firefox, devices } = kernel.playwright
+    let { firefox } = kernel.playwright
     const browser = await firefox.launch({ headless: false, });
     const context = await browser.newContext({ viewport: null })
     ondata({ raw: "creating new page\r\n" })
     const page = await context.newPage()
     ondata({ raw: `goto: ${req.params.url}\r\n` })
     await page.goto(req.params.url)
+    ondata({ raw: `wait for the textarea to show up\r\n` })
     await page.waitForSelector("textarea")
+    ondata({ raw: `focus the textarea\r\n` })
     await page.focus("textarea")
+    ondata({ raw: `enter prompt\r\n` })
     await page.keyboard.type("a fuzzy gentleman cat sipping coffee")
+    ondata({ raw: `click generate\r\n` })
     await page.click("button.primary")
-    console.log("1")
+    ondata({ raw: `wait until the image gets generated for the first time\r\n` })
     await page.waitForSelector(".image-frame img")
-    console.log("2")
+    ondata({ raw: `click generate one more time\r\n` })
     await page.click("button.primary")
-    console.log("3")
+    ondata({ raw: `start listening img src\r\n` })
     await page.exposeFunction('handleSrcChange', (src) => {
       console.log("src", src)
       page.click("button.primary")
     });
-    console.log("4")
     await page.evaluate((selector) => {
-      console.log("5")
       const img = document.querySelector(selector);
-      console.log("img", img)
       if (!img) {
         console.error(`Element not found: ${selector}`);
         return;
       }
-
       // Observe changes using MutationObserver
       const observer = new MutationObserver((src) => {
         console.log("Mutated")
@@ -39,7 +38,6 @@ class Launch {
 
       observer.observe(img, { attributes: true, attributeFilter: ['src'] });
     }, ".image-frame img");
-    console.log("6")
 
 //    let cmds = req.params.cmds
 //    for(let cmd of cmds) {
