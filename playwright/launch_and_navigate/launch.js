@@ -12,12 +12,18 @@ class Launch {
     await page.focus("textarea")
     await page.keyboard.type("a fuzzy gentleman cat sipping coffee")
     await page.click("button.primary")
+    console.log("1")
     await page.waitForSelector(".image-frame img")
+    console.log("2")
+    await page.click("button.primary")
+    console.log("3")
     await page.exposeFunction('handleSrcChange', (src) => {
       console.log("src", src)
       page.click("button.primary")
     });
+    console.log("4")
     await page.evaluate((selector) => {
+      console.log("5")
       const img = document.querySelector(selector);
       console.log("img", img)
       if (!img) {
@@ -33,6 +39,7 @@ class Launch {
 
       observer.observe(img, { attributes: true, attributeFilter: ['src'] });
     }, ".image-frame img");
+    console.log("6")
 
 //    let cmds = req.params.cmds
 //    for(let cmd of cmds) {
