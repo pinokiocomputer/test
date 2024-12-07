@@ -23,7 +23,13 @@ module.exports = {
     href: "proxy/index.json"
   }, {
     text: "pre",
-    href: "pre/environment.js"
+    menu: [{
+      text: "pre/environment.js"
+      href: "pre/environment.js"
+      }
+      text: "pre/environment_default.js"
+      href: "pre/environment_default.js"
+    }]
   }, {
     text: "playwright",
     menu: [{
