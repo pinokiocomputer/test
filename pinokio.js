@@ -16,6 +16,9 @@ module.exports = {
     href: "loop",
     fs: true
   }, {
+    text: "shell break handler",
+    href: "shell/break.js"
+  }, {
     text: "huggingface download",
     href: "hf/download.js"
   }, {
