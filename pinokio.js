@@ -19,6 +19,9 @@ module.exports = {
     text: "shell break handler",
     href: "shell/break.js"
   }, {
+    text: "multi messages shell",
+    href: "shell/multimessage.js"
+  }, {
     text: "huggingface download",
     href: "hf/download.js"
   }, {

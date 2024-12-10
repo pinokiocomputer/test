@@ -1,0 +1,18 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "venv": "env",
+      "message": [
+        "pip install gradio==5.8.0",
+        "pip install gradio_litmodel3d==0.0.1",
+        "pip install tqdm"
+      ]
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "raw": "This message should never be displayed because it fails above"
+    }
+  }]
+}
