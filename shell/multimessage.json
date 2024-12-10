@@ -4,8 +4,8 @@
     "params": {
       "venv": "env",
       "message": [
-        "pip install gradio==5.8.0",
         "pip install gradio_litmodel3d==0.0.1",
+        "pip install gradio==5.8.0",
         "pip install tqdm"
       ]
     }
