@@ -20,7 +20,7 @@ module.exports = {
     href: "shell/break.js"
   }, {
     text: "multi messages shell",
-    href: "shell/multimessage.js"
+    href: "shell/multimessage.json"
   }, {
     text: "huggingface download",
     href: "hf/download.js"
