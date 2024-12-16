@@ -1,4 +1,9 @@
 {
+  "pre": [{
+    "env": "CUSTOM_ENV",
+    "description": "Set the CUSTOM_ENV environment variable",
+    "default": "this is an example default value"
+  }],
   "run": [{
     "method": "log",
     "params": {
