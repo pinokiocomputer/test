@@ -18,7 +18,7 @@ module.exports = {
       params: {
         venv: "env",                // Edit this to customize the venv folder path
         message: [
-          "pip install transformers accelerate diffusers gradio devicetorch"
+          "uv pip install transformers accelerate diffusers gradio devicetorch"
         ],
       }
     },
