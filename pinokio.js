@@ -99,6 +99,9 @@ module.exports = {
   }, {
     text: "Env",
     menu: [{
+      text: "consistency check",
+      href: "env/template/get.json"
+    }, {
       text: "template",
       href: "env/get.json"
     }, {
