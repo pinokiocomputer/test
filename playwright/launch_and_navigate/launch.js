@@ -16,7 +16,7 @@ class Launch {
     ondata({ raw: `click generate\r\n` })
     await page.click("button.primary")
     ondata({ raw: `wait until the image gets generated for the first time\r\n` })
-    await page.waitForSelector(".image-frame img")
+    await page.waitForSelector(".image-frame img", { timeout: 600000 } )
     ondata({ raw: `click generate one more time\r\n` })
     await page.click("button.primary")
     ondata({ raw: `start listening img src\r\n` })
