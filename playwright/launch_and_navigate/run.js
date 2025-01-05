@@ -28,7 +28,7 @@ module.exports = {
         venv: "env",
         message: [ "python app.py", ],
         on: [{
-          "event": "/http:\/\/\\S+/",   
+          "event": "/http:\/\/[0-9.:]+/",   
           "done": true
         }]
       }
