@@ -16,6 +16,9 @@ module.exports = {
     href: "loop",
     fs: true
   }, {
+    text: "next",
+    href: "next/index.js",
+  }, {
     text: "shell break handler",
     href: "shell/break.js"
   }, {
