@@ -9,7 +9,7 @@ module.exports = {
     when: "{{which('xcode-select')}}",
     method: "shell.run",
     params: {
-      message: "{{which('xcode-select --help')}}"
+      message: "{{which('xcode-select')}} --help"
     },
   }, {
     when: "{{which('winget')}}",
