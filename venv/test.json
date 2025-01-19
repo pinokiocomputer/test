@@ -3,9 +3,14 @@
     "method": "shell.run",
     "params": {
       "message": "pip list",
+      "venv": "py310_env_1"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "pip list",
       "venv": {
-        "path": "py310_env",
-        "python": "3.11"
+        "path": "py310_env_2"
       }
     }
   }, {
