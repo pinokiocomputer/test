@@ -1,0 +1,35 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "pip list",
+      "venv": {
+        "path": "py310_env",
+        "python": "3.11"
+      }
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "pip list",
+      "venv": {
+        "path": "py311_env_1",
+        "python": "3.11"
+      }
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "pip list",
+      "venv": "py311_env_2",
+      "venv_python": "3.11"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "pip list",
+      "venv": "py312_env",
+      "venv_python": "3.12"
+    }
+  }]
+}
