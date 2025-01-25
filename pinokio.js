@@ -25,6 +25,9 @@ module.exports = {
     text: "next",
     href: "next/index.js",
   }, {
+    text: "interactive shell",
+    href: "shell/interactive.js"
+  }, {
     text: "shell break handler",
     href: "shell/break.js"
   }, {
