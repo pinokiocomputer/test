@@ -1,0 +1,14 @@
+{
+  "run": [{
+    "method": "log",
+    "params": {
+      "raw": "Button\r\n"
+    }
+  }, {
+    "method": "log",
+    "params": {
+      "img": "icon.jpg",
+      "width": "50%"
+    }
+  }]
+}
