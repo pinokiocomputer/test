@@ -7,7 +7,7 @@
   }, {
     "method": "log",
     "params": {
-      "img": "icon.jpg",
+      "img": "../icon.jpg",
       "width": "50%"
     }
   }]
