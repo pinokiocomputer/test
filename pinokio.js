@@ -41,7 +41,7 @@ module.exports = {
     href: "proxy/index.json"
   }, {
     text: "log",
-    href: "log/index.json"
+    href: "log/i.json"
   }, {
     text: "pre",
     menu: [{
