@@ -40,6 +40,9 @@ module.exports = {
     text: "proxy",
     href: "proxy/index.json"
   }, {
+    text: "log",
+    href: "log/index.json"
+  }, {
     text: "pre",
     menu: [{
       text: "pre/environment.js",
