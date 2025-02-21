@@ -1,11 +1,32 @@
 module.exports = {
-  daemon: true,
+//  daemon: true,
   run: [{
     method: "shell.run",
     params: {
+      id: "term",
       venv: "env",
-      persistent: true,
-      message: ""
+      input: true,
+      message: "",
+      on: [{
+        event: "/fuck/i",
+        kill: true
+      }]
+    }
+  }, {
+    method: "input",
+    params: {
+      title: "INPUT",
+      description: "THIS IS INPUT"
+    }
+  }, {
+    method: "shell.connect",
+    params: {
+      id: "term",
+      venv: "env",
+      on: [{
+        event: "/fuck/i",
+        kill: true
+      }]
     }
   }]
 }

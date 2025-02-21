@@ -16,8 +16,14 @@ module.exports = {
     href: "loop",
     fs: true
   }, {
+    text: "process.wait url",
+    href: "process/wait_url.js",
+  }, {
     text: "which",
     href: "which/index.js",
+  }, {
+    text: "which lib",
+    href: "which/lib.js",
   }, {
     text: "venv",
     href: "venv/test.json",
@@ -27,6 +33,9 @@ module.exports = {
   }, {
     text: "interactive shell",
     href: "shell/interactive.js"
+  }, {
+    text: "non interactive shell",
+    href: "shell/default_no_input.js"
   }, {
     text: "shell break handler",
     href: "shell/break.js"
