@@ -257,6 +257,9 @@ module.exports = {
     menu: [{
       text: "gpu",
       href: "sysinfo/gpu.js"
+    }, {
+      text: "gpu model",
+      href: "sysinfo/gpu_model.js"
     }]
   }, {
     text: "notify",
