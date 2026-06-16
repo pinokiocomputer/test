@@ -3,7 +3,7 @@ module.exports = {
     "method": "fs.open",
     "params": {
       "command": "view",
-      "path": "array.js"
+      "path": "array.json"
     }
   }, {
     "method": "fs.open",
@@ -19,3 +19,4 @@ module.exports = {
     }
   }]
 }
+
