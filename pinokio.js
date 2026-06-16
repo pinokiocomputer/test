@@ -291,8 +291,8 @@ module.exports = {
       text: "gpu model",
       href: "sysinfo/gpu_model.js"
     }, {
-      text: "gpu backend",
-      href: "sysinfo/gpu_backend.js"
+      text: "torch backend",
+      href: "sysinfo/torch_backend.js"
     }]
   }, {
     text: "notify",
