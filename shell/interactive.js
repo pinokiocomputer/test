@@ -1,31 +1,11 @@
 module.exports = {
-//  daemon: true,
   run: [{
     method: "shell.run",
     params: {
-      id: "term",
-      venv: "env",
-      input: true,
-      message: "",
+      message: "echo API_TEST_OK shell_run_current",
       on: [{
-        event: "/fuck/i",
-        kill: true
-      }]
-    }
-  }, {
-    method: "input",
-    params: {
-      title: "INPUT",
-      description: "THIS IS INPUT"
-    }
-  }, {
-    method: "shell.connect",
-    params: {
-      id: "term",
-      venv: "env",
-      on: [{
-        event: "/fuck/i",
-        kill: true
+        event: "/API_TEST_OK shell_run_current/",
+        break: false
       }]
     }
   }]

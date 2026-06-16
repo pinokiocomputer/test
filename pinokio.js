@@ -19,6 +19,12 @@ module.exports = {
     text: "process.wait url",
     href: "process/wait_url.js",
   }, {
+    text: "process.wait sec",
+    href: "process/wait_sec.js",
+  }, {
+    text: "process.wait wait-on file",
+    href: "process/wait_on_file.js",
+  }, {
     text: "which",
     href: "which/index.js",
   }, {
@@ -42,6 +48,9 @@ module.exports = {
   }, {
     text: "multi messages shell",
     href: "shell/multimessage.json"
+  }, {
+    text: "structured argv shell",
+    href: "shell/structured_argv.js"
   }, {
     text: "huggingface download",
     href: "hf/download.js"
@@ -96,6 +105,15 @@ module.exports = {
   }, {
     text: "args",
     href: "args/index.json"
+  }, {
+    text: "exec",
+    href: "exec/index.js"
+  }, {
+    text: "load",
+    href: "load/index.js"
+  }, {
+    text: "uri.open manual",
+    href: "uri/open.js"
   }, {
     text: "torch install",
     href: "script_run/install.json"
@@ -184,6 +202,12 @@ module.exports = {
       href: "vars/script/script_download.json"
     }]
   }, {
+    text: "Storage",
+    menu: [{
+      text: "local/global set/rm",
+      href: "storage/local_global.js"
+    }]
+  }, {
     text: "jump",
     menu: [{
       text: "jump to id",
@@ -206,6 +230,9 @@ module.exports = {
     menu: [{
       text: "fs.open",
       href: "fs/fs_open.js"
+    }, {
+      text: "fs.make append remove",
+      href: "fs/make_append_remove.js"
     }, {
       text: "fs.copy",
       href: "fs/fs_copy.js"
@@ -230,6 +257,9 @@ module.exports = {
     }, {
       text: "fs.download",
       href: "fs/fs_download.js"
+    }, {
+      text: "fs.download local",
+      href: "fs/fs_download_local.js"
     }, {
       text: "fs.download_git",
       href: "fs/fs_download_git.js"
@@ -260,6 +290,9 @@ module.exports = {
     }, {
       text: "gpu model",
       href: "sysinfo/gpu_model.js"
+    }, {
+      text: "gpu backend",
+      href: "sysinfo/gpu_backend.js"
     }]
   }, {
     text: "notify",

@@ -2,7 +2,7 @@
   "run": [{
     "method": "log",
     "params": {
-      "raw": "{{proxy(11434)}}"
+      "raw": "Proxy template helper: {{proxy(11434)}}\r\nAPI_TEST_OK proxy_template_helper"
     }
   }]
 }
