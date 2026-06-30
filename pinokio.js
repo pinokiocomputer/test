@@ -55,6 +55,9 @@ module.exports = {
     text: "huggingface download",
     href: "hf/download.js"
   }, {
+    text: "huggingface login private download logout",
+    href: "hf/auth_private_download.js"
+  }, {
     text: "proxy",
     href: "proxy/index.json"
   }, {
